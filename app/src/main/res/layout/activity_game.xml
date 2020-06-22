@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:freezesText="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center_horizontal"
+        android:text="Tic Tac Toe"
+        android:textSize="50sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/text_title"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_view_p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:freezesText="true"
+            android:fontFamily="casual"
+            android:text="Player 1: 0"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/text_view_p2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_p1"
+            android:fontFamily="casual"
+            android:layout_centerHorizontal="true"
+            android:freezesText="true"
+            android:text="Player 2: 0"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+<LinearLayout android:layout_centerInParent="true"
+    android:layout_width="match_parent"
+    android:id="@+id/gameboard"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".GameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/button_00"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:freezesText="true"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:fontFamily="casual"
+            android:textStyle="bold"/>
+        <View
+            android:layout_width="5dp"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/button_01"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:freezesText="true"
+            android:fontFamily="casual"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:background="@drawable/button_bg"
+            android:textSize="30sp" />
+        <View
+            android:layout_width="5dp"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/button_02"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:freezesText="true"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/button_10"
+            android:layout_width="0dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:freezesText="true"
+            android:background="@drawable/button_bg"
+            android:textSize="30sp" />
+        <View
+            android:layout_width="5dp"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/button_11"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="casual"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:freezesText="true"
+            android:background="@drawable/button_bg"
+            android:textSize="30sp" />
+        <View
+            android:layout_width="5dp"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/button_12"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="casual"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:background="@drawable/button_bg"
+            android:freezesText="true"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/button_20"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:freezesText="true"
+            android:background="@drawable/button_bg"
+            android:textSize="30sp" />
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/button_21"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_bg"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:freezesText="true"
+            android:fontFamily="casual"
+            android:textSize="30sp" />
+        <View
+            android:layout_width="5dp"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/button_22"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_bg"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:freezesText="true"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gameboard"
+        android:layout_marginTop="10dp"
+        android:id="@+id/layout1"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_centerHorizontal="true"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_bg"
+        android:textColor="@android:color/white"
+        android:padding="5dp"
+        android:text="game reset" />
+    <Button
+        android:id="@+id/button_loadevent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:background="@drawable/button_bg"
+        android:textColor="@android:color/white"
+        android:padding="5dp"
+        android:text="Load Event" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:id="@+id/layout2"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/leaderboardSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_bg"
+            android:textColor="@android:color/white"
+            android:padding="5dp"
+            android:text="LeaderBoard Summary" />
+        <Button
+            android:id="@+id/leaderboardtopscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:background="@drawable/button_bg"
+            android:textColor="@android:color/white"
+            android:padding="5dp"
+            android:text="Leaderboard TopScore" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="You are player 1" />
+
+</RelativeLayout>

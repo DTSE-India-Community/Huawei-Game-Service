@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item  android:id="@+id/leaderboardSummary"
+        app:showAsAction="never"
+        android:title="Leaderboard Summary"/>
+
+
+    <item  android:id="@+id/leaderboardtopscore"
+        app:showAsAction="never"
+        android:title="Leaderboard TopScore"/>
+
+
+    <item  android:id="@+id/loadCurrentPlayerRankingScore"
+        android:title="Current Player Ranking Score"
+        app:showAsAction="never"/>
+</menu>
