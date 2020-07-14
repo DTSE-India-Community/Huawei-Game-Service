@@ -32,7 +32,7 @@ public class LeaderBoardActivity extends Activity {
     private RankingsClient rankingsClient;
     private TextView tvLeaderboard, tvLeaderboardtilte;
     private ImageView iv;
-    private static final String LEADERBOARD_ID = "5E405459D638E2EF659C93F85841A46087DCF5DF3ADB182B113DC1DFDA7B9FB9" ;
+    private static final String LEADERBOARD_ID = "generate_leaderBoard_Id_from AGC" ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

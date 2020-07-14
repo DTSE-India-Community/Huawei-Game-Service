@@ -47,8 +47,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     private TextView textViewPlayer1;
     private TextView textViewPlayer2;
 
-    private static final String EVENT_ID = "9D2B29C312B4276D681B1A06BB8D1036F6F576B0E6611B9F13DB9BA2329FF07D" ;
-    private static final String LEADERBOARD_ID = "5E405459D638E2EF659C93F85841A46087DCF5DF3ADB182B113DC1DFDA7B9FB9" ;
+    private static final String EVENT_ID = "generate_event_Id_from AGC" ;
+    private static final String LEADERBOARD_ID = "generate_leaderBoard_Id_from AGC" ;
 
 
     private static final String TAG = "GameActivity";
